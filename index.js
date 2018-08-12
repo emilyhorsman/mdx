@@ -143,14 +143,17 @@ export default function() {
 
 const schemaPlugins = {
     type: 'array',
-    items: [
-        {
-            instanceOf: 'Function',
-        },
-        {
-            type: 'object',
-        },
-    ],
+    items: {
+        type: 'array',
+        items: [
+            {
+                instanceOf: 'Function',
+            },
+            {
+                type: 'object',
+            },
+        ],
+    },
 };
 
 const schema = {

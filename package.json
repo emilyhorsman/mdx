@@ -1,0 +1,34 @@
+{
+  "name": "@emilyhorsman/mdx",
+  "version": "0.1.0",
+  "description": "An alternate mdx-js implementation",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilyhorsman/mdx.git"
+  },
+  "keywords": [
+    "mdx",
+    "js",
+    "gatsby",
+    "react",
+    "markdown"
+  ],
+  "author": "Emily Horsman <me@emilyhorsman.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilyhorsman/mdx/issues"
+  },
+  "homepage": "https://github.com/emilyhorsman/mdx#readme",
+  "dependencies": {
+    "loader-utils": "^1.1.0",
+    "remark-parse": "^5.0.0",
+    "remark-rehype": "^3.0.0",
+    "schema-utils": "^0.4.5",
+    "unified": "^7.0.0"
+  }
+}

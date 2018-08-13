@@ -126,15 +126,23 @@ const compiler = options => {
     };
 };
 
+function logger(options) {
+    console.log('logger outer', arguments);
+    return function(node) {
+        console.log('logger', node);
+        return node;
+    }
+}
+
 function hastToJSX(options) {
     this.Compiler = compiler(options);
 }
 
 function stringifyRoot(root) {
     return `
-export default function() {
+export default function(props) {
   return (
-    <Layout>
+    <Layout {...props}>
     ${root}
     </Layout>
   );

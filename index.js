@@ -23,7 +23,7 @@ function resolveReactJSXImport(componentName) {
 }
 
 function resolveFilesystemImport(componentName) {
-    return {default: componentName, from: '../components/' + componentName};
+    return {default: componentName, from: '~/' + componentName};
 }
 
 function resolveImportFactory(importResolvers) {

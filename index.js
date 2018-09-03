@@ -111,7 +111,7 @@ const compiler = options => {
         const imports = Array.from(
             children
                 .map(c => c.imports)
-                .reduce((a, b) => a.concat(b))
+                .reduce((a, b) => a.concat(b), [])
                 .reduce(
                     (s, componentName) => s.add(componentName),
                     new Set([
